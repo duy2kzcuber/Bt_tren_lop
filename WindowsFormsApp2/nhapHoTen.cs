@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
@@ -34,7 +27,7 @@ namespace WindowsFormsApp2
 
         private void nhapHoTen_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Modifiers == Keys.Alt && e.KeyCode == Keys.H)
+            if (e.Modifiers == Keys.Alt && e.KeyCode == Keys.H)
             {
                 txtHoten.Text = "Trường ĐH Công Nghệ GTVT";
             }
@@ -43,14 +36,14 @@ namespace WindowsFormsApp2
 
         private void nhapHoTen_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
-                MessageBox.Show("Bạn vừa nhấn chuột trái!","Thông Báo");
+                MessageBox.Show("Bạn vừa nhấn chuột trái!", "Thông Báo");
             }
-            if(e.Button == MouseButtons.Right)
+            if (e.Button == MouseButtons.Right)
             {
                 MessageBox.Show("Bạn vừa nhấn chuột phải!", "Thông Báo");
-            } 
+            }
             if (e.Button == MouseButtons.Middle)
             {
                 MessageBox.Show("Bạn vừa nhấn chuột giữa!", "Thông Báo");

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
@@ -22,9 +15,9 @@ namespace WindowsFormsApp2
             int a = int.Parse(txtA.Text);
             int b = int.Parse(txtB.Text);
             float x = (float)b / a;
-            if( a == 0)
+            if (a == 0)
             {
-                if( b == 0)
+                if (b == 0)
                 {
                     txtKQ.Text = "Phương trình có vô số nghiệm!";
                 }

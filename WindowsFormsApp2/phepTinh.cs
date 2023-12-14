@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
@@ -20,7 +13,8 @@ namespace WindowsFormsApp2
 
         private void txt_s1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!((e.KeyChar >= '0' && e.KeyChar <= '9') || e.KeyChar == (char)8 )){ 
+            if (!((e.KeyChar >= '0' && e.KeyChar <= '9') || e.KeyChar == (char)8))
+            {
                 e.Handled = true;
             }
         }
@@ -61,8 +55,8 @@ namespace WindowsFormsApp2
         {
             int a = int.Parse(txt_s1.Text);
             int b = int.Parse(txt_s2.Text);
-           
-            if(b == 0)
+
+            if (b == 0)
             {
                 txt_kq.Text = "Số chia bạn nhập không hợp lệ, vui lòng thử lại!";
             }

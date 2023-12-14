@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="capnhattacgia_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capnhattacgia_file.Designer.cs">
+      <DependentUpon>capnhattacgia_file.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,18 @@
     </Compile>
     <Compile Include="frm_loaisach.Designer.cs">
       <DependentUpon>frm_loaisach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nhangiatri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nhangiatri.Designer.cs">
+      <DependentUpon>frm_nhangiatri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_truyengt1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_truyengt1.Designer.cs">
+      <DependentUpon>frm_truyengt1.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaiPtbac1.cs">
       <SubType>Form</SubType>
@@ -152,6 +170,9 @@
     <Compile Include="Upload\quanlisinhvien.Designer.cs">
       <DependentUpon>quanlisinhvien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="capnhattacgia_file.resx">
+      <DependentUpon>capnhattacgia_file.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_loaisach.resx">
       <DependentUpon>frm_loaisach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nhangiatri.resx">
+      <DependentUpon>frm_nhangiatri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_truyengt1.resx">
+      <DependentUpon>frm_truyengt1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaiPtbac1.resx">
       <DependentUpon>GiaiPtbac1.cs</DependentUpon>

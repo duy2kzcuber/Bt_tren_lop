@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2.Upload
@@ -40,8 +33,8 @@ namespace WindowsFormsApp2.Upload
 
         private void btn_thoat_Click(object sender, EventArgs e)
         {
-            DialogResult dl =  MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if( dl == DialogResult.Yes)
+            DialogResult dl = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dl == DialogResult.Yes)
             {
                 Application.Exit();
             }

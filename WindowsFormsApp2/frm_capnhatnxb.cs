@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Configuration;
-using System.Net.Configuration;
-using System.Data.Common;
+using System.Windows.Forms;
 using e_excel = Microsoft.Office.Interop.Excel;
 
 namespace WindowsFormsApp2
@@ -25,7 +16,7 @@ namespace WindowsFormsApp2
         private bool checktrungma(string manxb)
         {
             //b1 :ket noi den database
-            if(con.State == ConnectionState.Closed)
+            if (con.State == ConnectionState.Closed)
             {
                 con.Open();
             }
@@ -40,7 +31,7 @@ namespace WindowsFormsApp2
         private void Load_dgv_nxb()
         {
             //b1 : ket noi den db
-            if(con.State != ConnectionState.Open)
+            if (con.State != ConnectionState.Open)
             {
                 con.Open();
             }
@@ -99,15 +90,15 @@ namespace WindowsFormsApp2
                 }
                 //b3: tạo đối tượng command để chèn dữ liệu vào bảng NXB và thực thi nó
 
-                string sql = "Insert Nha_xuat_ban Values ('"+manxb+ "',N'"+tennxb+"','"+sdt+ "','"+email+ "',N'"+diachi+ "',N'"+note+"')";
-             //   string sql = "Insert Nha_xuat_ban Values(@manxb, @tenxb, @sdt, @email, @diachi, @note)";
+                string sql = "Insert Nha_xuat_ban Values ('" + manxb + "',N'" + tennxb + "','" + sdt + "','" + email + "',N'" + diachi + "',N'" + note + "')";
+                //   string sql = "Insert Nha_xuat_ban Values(@manxb, @tenxb, @sdt, @email, @diachi, @note)";
                 SqlCommand cmd = new SqlCommand(sql, con);
-       //         cmd.Parameters.Add("@manxb", SqlDbType.NVarChar, 50).Value = manxb;
-       //         cmd.Parameters.Add("@tenxb", SqlDbType.NVarChar, 50).Value = tennxb;
-         //       cmd.Parameters.Add("@sdt", SqlDbType.NVarChar, 50).Value = sdt;
-          //      cmd.Parameters.Add("@email", SqlDbType.NVarChar, 50).Value = email;
-          //      cmd.Parameters.Add("@diachi", SqlDbType.NVarChar, 50).Value = diachi;
-          //      cmd.Parameters.Add("@note", SqlDbType.NVarChar, 50).Value = note;
+                //         cmd.Parameters.Add("@manxb", SqlDbType.NVarChar, 50).Value = manxb;
+                //         cmd.Parameters.Add("@tenxb", SqlDbType.NVarChar, 50).Value = tennxb;
+                //       cmd.Parameters.Add("@sdt", SqlDbType.NVarChar, 50).Value = sdt;
+                //      cmd.Parameters.Add("@email", SqlDbType.NVarChar, 50).Value = email;
+                //      cmd.Parameters.Add("@diachi", SqlDbType.NVarChar, 50).Value = diachi;
+                //      cmd.Parameters.Add("@note", SqlDbType.NVarChar, 50).Value = note;
                 cmd.ExecuteNonQuery(); // dung de thuc thi
                 cmd.Dispose(); // giai phong bo nho
                 con.Close();
@@ -147,12 +138,13 @@ namespace WindowsFormsApp2
             string diachi = txt_diachi.Text.Trim();
             string note = txt_note.Text.Trim();
             // b2: kết nối đến database
-            if(con.State == ConnectionState.Closed) {
+            if (con.State == ConnectionState.Closed)
+            {
                 con.Open();
             }
             //b3: tạo đối tượng conmmand để thực hiện sửa dữ liệu
             string sql = "Update Nha_xuat_ban set Tennxb= N'" + tennxb + "', Dienthoai= '" + sdt + "',Email= '" + email + "', Diachi= N'" + diachi + "',ghichu = N'" + note + "' Where Manxb = '" + manxb + "'";
-            SqlCommand cmd = new SqlCommand(sql,con);
+            SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             con.Close();
@@ -166,18 +158,18 @@ namespace WindowsFormsApp2
             //B1: lấy dữ liệu từ control đưa vào biến
             string manxb = txt_manxb.Text.Trim();
             //b2: kết nối đến database;
-            if(con.State == ConnectionState.Closed)
+            if (con.State == ConnectionState.Closed)
             {
                 con.Open();
             }
             //b3: tạo đối tượng command
             string sql = "Delete Nha_xuat_ban Where Manxb = '" + manxb + "'";
-            SqlCommand cmd = new SqlCommand(sql,con);
+            SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
-            con.Close ();
+            con.Close();
             MessageBox.Show("Xóa thành công!");
-            Load_dgv_nxb ();
+            Load_dgv_nxb();
             txt_manxb.Enabled = true;
         }
 
@@ -190,12 +182,13 @@ namespace WindowsFormsApp2
             string email = txt_em.Text.Trim();
             string diachi = txt_diachi.Text.Trim();
             //b2 ket noi den database
-            if(con.State == ConnectionState.Closed) { 
+            if (con.State == ConnectionState.Closed)
+            {
                 con.Open();
             }
             //b3 : tao duoi tuong command de lay du lieu
-            string sql = "Select * From Nha_xuat_ban Where Manxb like '%"+manxb+"%' and Tennxb like N'%"+tennxb+"%' and Dienthoai like '%"+sdt+"%' and Email like '%"+email+"%' and Diachi like N'%"+diachi+"%'";
-            SqlCommand cmd = new SqlCommand(sql, con);  
+            string sql = "Select * From Nha_xuat_ban Where Manxb like '%" + manxb + "%' and Tennxb like N'%" + tennxb + "%' and Dienthoai like '%" + sdt + "%' and Email like '%" + email + "%' and Diachi like N'%" + diachi + "%'";
+            SqlCommand cmd = new SqlCommand(sql, con);
             //b4: tao doi tuong data adapter de lay ket qua tu command
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
@@ -279,9 +272,9 @@ namespace WindowsFormsApp2
                 for (int c = 0; c < tb.Columns.Count; c++)
 
                 {
-                    if(c == 2)
+                    if (c == 2)
                     {
-                        arr[r, c] = "'" +  dr[c];
+                        arr[r, c] = "'" + dr[c];
                     }
                     else arr[r, c] = dr[c];
                 }

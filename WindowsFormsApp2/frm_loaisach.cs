@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
 using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 using e_excel = Microsoft.Office.Interop.Excel;
 namespace WindowsFormsApp2
 {
@@ -22,7 +16,7 @@ namespace WindowsFormsApp2
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["dtconnect"].ConnectionString);
         private void load_dgv_loaisach()
         {
-            if(con.State != ConnectionState.Open)
+            if (con.State != ConnectionState.Open)
             {
                 con.Open();
             }
@@ -56,7 +50,7 @@ namespace WindowsFormsApp2
         }
         private bool checktrungma(string maloai)
         {
-            if(con.State != ConnectionState.Open)
+            if (con.State != ConnectionState.Open)
             {
                 con.Open();
             }
@@ -83,7 +77,7 @@ namespace WindowsFormsApp2
                     return;
                 }
                 // kiem tra trung khoa chinh
-                if(checktrungma(maloai))
+                if (checktrungma(maloai))
                 {
                     MessageBox.Show("Mã loại sách đã tồn tại!");
                     txt_maloai.Focus();
@@ -101,7 +95,7 @@ namespace WindowsFormsApp2
                 cmd.Parameters.Add("@Maloai", SqlDbType.NVarChar, 50).Value = maloai;
                 cmd.Parameters.Add("@Tenloai", SqlDbType.NVarChar, 50).Value = tenloai;
                 cmd.Parameters.Add("@mota", SqlDbType.NVarChar, 200).Value = mota;
-                
+
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
                 con.Close();
@@ -121,13 +115,13 @@ namespace WindowsFormsApp2
             string tenloai = txt_tenloai.Text.Trim();
             string mota = txt_mota.Text.Trim();
             //b2 truy cap database
-            if(con.State != ConnectionState.Open)
+            if (con.State != ConnectionState.Open)
             {
                 con.Open();
             }
             //b3 tao doi tuong command
             string sql = "Update Loai_sach set Tenloai= '" + tenloai + "', mota= '" + mota + "' where Maloai= '" + maloai + "'";
-            SqlCommand cmd = new SqlCommand(sql,con);
+            SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             con.Close();
@@ -142,25 +136,26 @@ namespace WindowsFormsApp2
             string maloai = txt_maloai.Text.Trim();
 
             //b2: truy  cap database
-            if(con.State != ConnectionState.Open) { 
+            if (con.State != ConnectionState.Open)
+            {
                 con.Open();
             }
             //b3: tao doi tuong command
             string sql = "Delete From Loai_sach Where Maloai = '" + maloai + "'";
-            SqlCommand cmd =new SqlCommand(sql,con);
+            SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             con.Close();
             MessageBox.Show("Xóa thành công");
             load_dgv_loaisach();
-            txt_maloai.Enabled= true;
+            txt_maloai.Enabled = true;
         }
 
         private void btn_thoat_Click(object sender, EventArgs e)
         {
             string nofi = "Bạn có chắc chắn muốn thoát không?";
             var res = MessageBox.Show(nofi, "Thoát", MessageBoxButtons.YesNo);
-            if(res == DialogResult.Yes)
+            if (res == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -261,12 +256,12 @@ namespace WindowsFormsApp2
         {
             string maloai = txt_maloai.Text.Trim();
             string tenloai = txt_tenloai.Text.Trim();
-            string mota = txt_mota.Text.Trim();    
-            if(con.State != ConnectionState.Open)
+            string mota = txt_mota.Text.Trim();
+            if (con.State != ConnectionState.Open)
             {
                 con.Open();
             }
-            string sql = "Select * From Loai_sach Where Maloai like N'%"+maloai+"%' and Tenloai like N'%"+tenloai+"%'  ";
+            string sql = "Select * From Loai_sach Where Maloai like N'%" + maloai + "%' and Tenloai like N'%" + tenloai + "%'  ";
             SqlCommand cmd = new SqlCommand(sql, con);
 
             SqlDataAdapter da = new SqlDataAdapter();
@@ -280,7 +275,7 @@ namespace WindowsFormsApp2
             dgv_loaisach.DataSource = dt;
             dgv_loaisach.Refresh();
         }
-        
+
 
         private void btn_xuat_Click(object sender, EventArgs e)
         {

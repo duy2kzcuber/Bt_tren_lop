@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
@@ -26,13 +19,13 @@ namespace WindowsFormsApp2
         {
             int a = int.Parse(txt_nhap.Text);
             cbo_so.Items.Add(a);
-            txt_nhap.Clear(); 
+            txt_nhap.Clear();
             txt_nhap.Focus();
         }
 
         private void txt_nhap_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!((e.KeyChar >= '0' && e.KeyChar <= '9') || e.KeyChar == (char)8))
+            if (!((e.KeyChar >= '0' && e.KeyChar <= '9') || e.KeyChar == (char)8))
             {
                 e.Handled = true;
             }
@@ -52,13 +45,13 @@ namespace WindowsFormsApp2
         }
 
         private void btn_tonguoc_Click(object sender, EventArgs e)
-        {   
+        {
             int sum = 0;
             int tmp;
             for (int i = 0; i < lst_uoc.Items.Count; i++)
             {
                 tmp = int.Parse(lst_uoc.Items[i].ToString());
-                sum += tmp ;
+                sum += tmp;
             }
             MessageBox.Show("Tổng ước là: " + sum);
         }
@@ -67,17 +60,17 @@ namespace WindowsFormsApp2
         {
             int cnt = 0;
             int tmp;
-            for(int i = 0; i < lst_uoc.Items.Count; i++)
+            for (int i = 0; i < lst_uoc.Items.Count; i++)
             {
-                tmp = int.Parse(lst_uoc.Items[i].ToString()) ;
+                tmp = int.Parse(lst_uoc.Items[i].ToString());
                 if (tmp % 2 == 0) cnt++;
             }
-            MessageBox.Show("Số lượng ước chẵn là: " +  cnt);
+            MessageBox.Show("Số lượng ước chẵn là: " + cnt);
         }
         bool snt(int n)
         {
             if (n == 1 || n == 0) return false;
-            for(int i = 2; i <= Math.Sqrt(n); i++)
+            for (int i = 2; i <= Math.Sqrt(n); i++)
             {
                 if (n % i == 0) return false;
             }
@@ -90,7 +83,7 @@ namespace WindowsFormsApp2
             for (int i = 0; i < lst_uoc.Items.Count; i++)
             {
                 tmp = int.Parse(lst_uoc.Items[i].ToString());
-                if(snt(tmp) == true) cnt++;
+                if (snt(tmp) == true) cnt++;
             }
             MessageBox.Show("Số lượng ước nguyên tố là: " + cnt);
         }

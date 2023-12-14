@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
@@ -36,7 +29,7 @@ namespace WindowsFormsApp2
             else if (delta == 0)
             {
                 double x = -b / (2 * a);
-                txtKQ.Text = "Phuong trinh co nghiem kep x= "+ x;
+                txtKQ.Text = "Phuong trinh co nghiem kep x= " + x;
             }
 
             else
