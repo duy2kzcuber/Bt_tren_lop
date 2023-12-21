@@ -77,7 +77,7 @@ namespace WindowsFormsApp2
                     return;
                 }
                 // kiem tra trung khoa chinh
-                if (checktrungma(manxb))
+                if (Thuvien.checktrungma(manxb,"Nha_xuat_ban","Manxb"))
                 {
                     MessageBox.Show("Mã nhà xuất bản đã tồn tại!");
                     txt_manxb.Focus(); // con tro se nhap nhay tai do

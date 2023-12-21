@@ -60,12 +60,6 @@
     <Compile Include="capnhattacgia_file.Designer.cs">
       <DependentUpon>capnhattacgia_file.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCapnhatsach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCapnhatsach.Designer.cs">
-      <DependentUpon>frmCapnhatsach.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +71,12 @@
     </Compile>
     <Compile Include="frm_capnhatnxb.Designer.cs">
       <DependentUpon>frm_capnhatnxb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_capnhatsach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_capnhatsach.Designer.cs">
+      <DependentUpon>frm_capnhatsach.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ketnoi.cs">
       <SubType>Form</SubType>
@@ -150,6 +150,7 @@
     <Compile Include="SRMcombobox.Designer.cs">
       <DependentUpon>SRMcombobox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Thuvien.cs" />
     <Compile Include="TimNgayThang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,14 +180,14 @@
     <EmbeddedResource Include="capnhattacgia_file.resx">
       <DependentUpon>capnhattacgia_file.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCapnhatsach.resx">
-      <DependentUpon>frmCapnhatsach.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_capnhatnxb.resx">
       <DependentUpon>frm_capnhatnxb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_capnhatsach.resx">
+      <DependentUpon>frm_capnhatsach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ketnoi.resx">
       <DependentUpon>frm_ketnoi.cs</DependentUpon>
