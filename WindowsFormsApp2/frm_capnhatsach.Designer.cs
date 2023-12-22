@@ -78,7 +78,7 @@
             // 
             this.cbo_manxb.FormattingEnabled = true;
             this.cbo_manxb.Location = new System.Drawing.Point(416, -27);
-            this.cbo_manxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbo_manxb.Margin = new System.Windows.Forms.Padding(2);
             this.cbo_manxb.Name = "cbo_manxb";
             this.cbo_manxb.Size = new System.Drawing.Size(210, 21);
             this.cbo_manxb.TabIndex = 42;
@@ -87,7 +87,7 @@
             // 
             this.cbo_maloaisach.FormattingEnabled = true;
             this.cbo_maloaisach.Location = new System.Drawing.Point(56, -27);
-            this.cbo_maloaisach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbo_maloaisach.Margin = new System.Windows.Forms.Padding(2);
             this.cbo_maloaisach.Name = "cbo_maloaisach";
             this.cbo_maloaisach.Size = new System.Drawing.Size(210, 21);
             this.cbo_maloaisach.TabIndex = 40;
@@ -95,7 +95,7 @@
             // txt_tensach
             // 
             this.txt_tensach.Location = new System.Drawing.Point(416, -69);
-            this.txt_tensach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_tensach.Margin = new System.Windows.Forms.Padding(2);
             this.txt_tensach.Name = "txt_tensach";
             this.txt_tensach.Size = new System.Drawing.Size(210, 20);
             this.txt_tensach.TabIndex = 35;
@@ -103,7 +103,7 @@
             // txt_masach
             // 
             this.txt_masach.Location = new System.Drawing.Point(56, -69);
-            this.txt_masach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_masach.Margin = new System.Windows.Forms.Padding(2);
             this.txt_masach.Name = "txt_masach";
             this.txt_masach.Size = new System.Drawing.Size(210, 20);
             this.txt_masach.TabIndex = 34;
@@ -160,7 +160,7 @@
             this.namxb,
             this.mota});
             this.dataGridView1.Location = new System.Drawing.Point(112, 353);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -219,7 +219,7 @@
             // btn_thoat
             // 
             this.btn_thoat.Location = new System.Drawing.Point(652, 306);
-            this.btn_thoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_thoat.Margin = new System.Windows.Forms.Padding(2);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(56, 19);
             this.btn_thoat.TabIndex = 67;
@@ -229,7 +229,7 @@
             // btn_import
             // 
             this.btn_import.Location = new System.Drawing.Point(569, 306);
-            this.btn_import.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_import.Margin = new System.Windows.Forms.Padding(2);
             this.btn_import.Name = "btn_import";
             this.btn_import.Size = new System.Drawing.Size(62, 19);
             this.btn_import.TabIndex = 66;
@@ -239,7 +239,7 @@
             // btn_xuat
             // 
             this.btn_xuat.Location = new System.Drawing.Point(476, 306);
-            this.btn_xuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xuat.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xuat.Name = "btn_xuat";
             this.btn_xuat.Size = new System.Drawing.Size(59, 19);
             this.btn_xuat.TabIndex = 65;
@@ -249,7 +249,7 @@
             // btn_timkiem
             // 
             this.btn_timkiem.Location = new System.Drawing.Point(386, 306);
-            this.btn_timkiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(56, 19);
             this.btn_timkiem.TabIndex = 64;
@@ -259,7 +259,7 @@
             // btn_xoa
             // 
             this.btn_xoa.Location = new System.Drawing.Point(294, 306);
-            this.btn_xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xoa.Margin = new System.Windows.Forms.Padding(2);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(56, 19);
             this.btn_xoa.TabIndex = 63;
@@ -269,7 +269,7 @@
             // btn_sua
             // 
             this.btn_sua.Location = new System.Drawing.Point(202, 306);
-            this.btn_sua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_sua.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(56, 19);
             this.btn_sua.TabIndex = 62;
@@ -279,7 +279,7 @@
             // btn_luu
             // 
             this.btn_luu.Location = new System.Drawing.Point(112, 306);
-            this.btn_luu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_luu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_luu.Name = "btn_luu";
             this.btn_luu.Size = new System.Drawing.Size(56, 19);
             this.btn_luu.TabIndex = 61;
@@ -290,7 +290,7 @@
             // btn_pick
             // 
             this.btn_pick.Location = new System.Drawing.Point(112, 254);
-            this.btn_pick.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_pick.Margin = new System.Windows.Forms.Padding(2);
             this.btn_pick.Name = "btn_pick";
             this.btn_pick.Size = new System.Drawing.Size(56, 19);
             this.btn_pick.TabIndex = 60;
@@ -302,7 +302,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(548, 59);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(210, 21);
             this.comboBox1.TabIndex = 59;
@@ -311,7 +311,7 @@
             // 
             this.cbo_matg.FormattingEnabled = true;
             this.cbo_matg.Location = new System.Drawing.Point(189, 104);
-            this.cbo_matg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbo_matg.Margin = new System.Windows.Forms.Padding(2);
             this.cbo_matg.Name = "cbo_matg";
             this.cbo_matg.Size = new System.Drawing.Size(210, 21);
             this.cbo_matg.TabIndex = 58;
@@ -320,7 +320,7 @@
             // 
             this.cbo_malsach.FormattingEnabled = true;
             this.cbo_malsach.Location = new System.Drawing.Point(189, 59);
-            this.cbo_malsach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbo_malsach.Margin = new System.Windows.Forms.Padding(2);
             this.cbo_malsach.Name = "cbo_malsach";
             this.cbo_malsach.Size = new System.Drawing.Size(210, 21);
             this.cbo_malsach.TabIndex = 57;
@@ -329,7 +329,7 @@
             // txt_pick
             // 
             this.txt_pick.Location = new System.Drawing.Point(189, 254);
-            this.txt_pick.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_pick.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pick.Name = "txt_pick";
             this.txt_pick.Size = new System.Drawing.Size(210, 20);
             this.txt_pick.TabIndex = 56;
@@ -337,7 +337,7 @@
             // txt_soluong
             // 
             this.txt_soluong.Location = new System.Drawing.Point(189, 206);
-            this.txt_soluong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_soluong.Margin = new System.Windows.Forms.Padding(2);
             this.txt_soluong.Name = "txt_soluong";
             this.txt_soluong.Size = new System.Drawing.Size(210, 20);
             this.txt_soluong.TabIndex = 55;
@@ -345,7 +345,7 @@
             // txt_mota
             // 
             this.txt_mota.Location = new System.Drawing.Point(189, 155);
-            this.txt_mota.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_mota.Margin = new System.Windows.Forms.Padding(2);
             this.txt_mota.Name = "txt_mota";
             this.txt_mota.Size = new System.Drawing.Size(569, 20);
             this.txt_mota.TabIndex = 54;
@@ -353,7 +353,7 @@
             // txt_manxb
             // 
             this.txt_manxb.Location = new System.Drawing.Point(548, 104);
-            this.txt_manxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_manxb.Margin = new System.Windows.Forms.Padding(2);
             this.txt_manxb.Name = "txt_manxb";
             this.txt_manxb.Size = new System.Drawing.Size(210, 20);
             this.txt_manxb.TabIndex = 53;
@@ -361,7 +361,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(548, 17);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(210, 20);
             this.textBox1.TabIndex = 52;
@@ -369,7 +369,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(189, 17);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(210, 20);
             this.textBox2.TabIndex = 51;
@@ -457,11 +457,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(518, 199);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(234, 86);
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frm_capnhatsach
             // 
@@ -503,7 +504,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_capnhatsach";
             this.Text = "frm_capnhatsach";
             this.Load += new System.EventHandler(this.frm_capnhatsach_Load);

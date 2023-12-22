@@ -13,7 +13,7 @@ namespace WindowsFormsApp2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_capnhatnxb());
+            Application.Run(new frm_capnhatsach());
         }
     }
 }
